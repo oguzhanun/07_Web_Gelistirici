@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <!-- Menu -->
+    <header>
+        <h2 class="display-4 text-center my-4">Alerts & Media Objects</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="dropdown">
+                        <button class="btn btn-success btn-block dropdown-toggle" type="button" data-toggle="dropdown">
+                 			 Utilities
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="2-bootstrap-setup.html">Bootstrap Setup</a>
+                            <a class="dropdown-item" href="3-typography.html">Typography</a>
+                            <a class="dropdown-item" href="4-Text-Align-Display.html">Text Align & Display</a>
+                            <a class="dropdown-item" href="5-Float-Positions.html">Floats & Positions</a>
+                            <a class="dropdown-item" href="6-Colors.html">Colors</a>
+                            <a class="dropdown-item" href="7-Margin-Padding.html">Margin & Padding</a>
+                            <a class="dropdown-item" href="8-Border-Sizing.html">Border & Sizing</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="dropdown">
+                        <button class="btn btn-primary btn-block dropdown-toggle" type="button" data-toggle="dropdown">
+                           Components
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="9-Buttons-Button-Groups.html">Buttons & Button Groups</a>
+                            <a class="dropdown-item" href="10-Forms-Input-Groups.html">Forms & Input Groups</a>
+                            <a class="dropdown-item" href="11-Tables-Paginations.html">Tables & Paginations</a>
+                            <a class="dropdown-item" href="12-List-Groups-Badges.html">List Group & Badges</a>
+                            <a class="dropdown-item" href="13-Navbar-Navs.html">Navbar & Navs</a>
+                            <a class="dropdown-item" href="14-Alerts-Media-Objects.html">Alerts & Media Objects</a>
+                            <a class="dropdown-item" href="15-Cards.html">Cards</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="dropdown">
+                        <button class="btn btn-warning btn-block dropdown-toggle" type="button" data-toggle="dropdown">
+                            Layout
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="16-Breakpoints.html">Breakpoints</a>
+                            <a class="dropdown-item" href="17-Grid.html">Grids</a>
+                            <a class="dropdown-item" href="18-Flexbox.html">Flexbox Classes</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="dropdown">
+                        <button class="btn btn-danger btn-block dropdown-toggle" type="button" data-toggle="dropdown">
+                        	  Plugins
+                    	 </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="19-Sliders.html">Carousel Slider</a>
+                            <a class="dropdown-item" href="20-Collapse-Accordion.html">Collapse & Accordion</a>
+                            <a class="dropdown-item" href="21-Tooltips.html">Tooltips</a>
+                            <a class="dropdown-item" href="22-Popovers.html">Popovers</a>
+                            <a class="dropdown-item" href="23-Modals.html">Modals</a>
+                            <a class="dropdown-item" href="24-ScrollSpy.html">ScrollSpy</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+    </header>
+
+    <div class="container">
+
+
+        <!-- Alerts -->
+        <div class="alert alert-primary">
+            This is a primary alert—check it out!
+        </div>
+        <div>
+            This is a secondary alert—check it out!
+        </div>
+        <div>
+            This is a success alert—check it out!
+        </div>
+        <div>
+            This is a danger alert—check it out!
+        </div>
+        <div>
+            This is a warning alert—check it out!
+        </div>
+        <div>
+            This is a info alert—check it out!
+        </div>
+        <div>
+            This is a light alert—check it out!
+        </div>
+        <div>
+            This is a dark alert—check it out!
+        </div>
+
+        <br><br>
+
+        <!-- Alerts with Links -->
+
+
+        <div class="alert alert-primary">
+            This is a primary alert with <a class="alert-link" href="#">an example link</a>. Give it a click if you like.
+        </div>
+        <div>
+            This is a secondary alert with <a href="#">an example link</a>. Give it a click if you like.
+        </div>
+        <div>
+            This is a success alert with <a href="#">an example link</a>. Give it a click if you like.
+        </div>
+        <div>
+            This is a danger alert with <a href="#">an example link</a>. Give it a click if you like.
+        </div>
+        <div>
+            This is a warning alert with <a href="#">an example link</a>. Give it a click if you like.
+        </div>
+        <div>
+            This is a info alert with <a href="#">an example link</a>. Give it a click if you like.
+        </div>
+        <div>
+            This is a light alert with <a href="#">an example link</a>. Give it a click if you like.
+        </div>
+        <div>
+            This is a dark alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+        </div>
+
+        <br><br>
+
+        <!-- Alerts with Content -->
+
+        <div class="alert alert-danger">
+            <h4>Well done!</h4>
+            <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
+            <hr>
+            <p>Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
+        </div>
+
+        <br><br>
+
+        <!-- Alerts with Dismissible -->
+        <div class="alert alert-dismissable alert-success d-inline-block fade show">
+            <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+            <button type="button" class="close p-1 border border-success ml-3" data-dismiss="alert">
+    			<span aria-hidden="true">&times;</span>
+  			</button>
+        </div>
+
+        <br><br>
+        <!-- Media object -->
+
+        <div class="media">
+            <img class="align-self-center" src="http://via.placeholder.com/64x64" alt="">
+            <div class="media-body ml-3">
+                <h5>Media heading</h5>
+                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+            </div>
+        </div>
+
+        <br><br>
+
+        <div class="media">
+            <img class="align-self-end" src="http://via.placeholder.com/64x64" alt="">
+            <div class="media-body ml-3">
+                <h5>Media heading</h5>
+                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+            </div>
+        </div>
+
+        <!-- Nesting Media object -->
+
+        <div>
+            <img class="mt-3" src="http://via.placeholder.com/64x64" alt="">
+            <div>
+                <h5>Media heading</h5>
+                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+
+                <div>
+                    <a href="#">
+        				<img src="..." alt="">
+      				</a>
+                    <div>
+                        <h5>Media heading</h5>
+                        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <br><br>
+
+        <!-- Alignment -->
+
+        <br><br>
+
+        <!-- Media Object List -->
+
+        <ul class="list-unstyled">
+            <li class="media">
+                <img class="align-self-center" src="http://via.placeholder.com/64x64" alt="">
+                <div class="media-body ml-3">
+                    <h5>Media heading</h5>
+                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                </div>
+            </li>
+
+            <li class="media">
+                <img class="align-self-center" src="http://via.placeholder.com/64x64" alt="">
+                <div class="media-body ml-3">
+                    <h5>Media heading</h5>
+                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                </div>
+            </li>
+
+            <li class="media">
+                <img class="align-self-center" src="http://via.placeholder.com/64x64" alt="">
+                <div class="media-body ml-3">
+                    <h5>Media heading</h5>
+                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                </div>
+            </li>
+
+            <li class="media">
+                <img class="align-self-center" src="http://via.placeholder.com/64x64" alt="">
+                <div class="media-body ml-3">
+                    <h5>Media heading</h5>
+                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                </div>
+            </li>
+
+
+        </ul>
+
+
+    </div>
+
+
+
+    <div style="margin-top:300px;"></div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

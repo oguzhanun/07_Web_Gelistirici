@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Menu Uygulaması</title>
+
+    <Style>
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            position: absolute;
+        }
+
+        li {
+            display: inline-block;
+            float: left;
+            margin: 1px;
+        }
+
+        li a {
+            display: block;
+            min-width: 140px;
+            height: 50px;
+            line-height: 50px;
+            text-decoration: none;
+            text-align: center;
+            background: #2f3036;
+            color: white;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        }
+
+        li a:hover {
+            background: green;
+        }
+        
+        li:hover ul a{
+            background:#f3f3f3;
+            color: black;
+            height: 40px;
+            line-height:40px;
+        }
+        li:hover ul a:hover{
+            background: green;
+            
+        }
+        
+        li ul li{
+            display: block;
+            float: none;
+        }
+        
+        li ul li a{
+            text-align: left;
+            padding: 0 20px;
+            min-width: 100px;
+        }
+        
+        li ul{
+            display: none;
+        }
+        
+        li:hover a{
+            background: green;
+        }
+
+        ul li a:hover + .hidden,.hidden:hover{
+            display: block;
+        }
+        
+    </Style>
+
+
+
+
+</head>
+
+<body>
+
+    <ul class="ilk_seviye">
+        <li>
+            <a href="#">Anasayfa</a>
+        </li>
+
+        <li>
+            <a href="#">Hakkımızda</a>
+        </li>
+
+        <li>
+            <a href="#">Kurslar</a>
+            <ul class="hidden">
+                <li>
+                    <a href="#">web programlama eğitimi</a>
+                </li>
+
+                <li>
+                    <a href="#">Java Eğitimi</a>
+                </li>
+
+                <li>
+                    <a href="#">Phyton Eğitimi</a>
+                </li>
+            </ul>
+        </li>
+
+        <li>
+            <a href="#">Makale</a>
+        </li>
+
+        <li>
+            <a href="#">İletişim</a>
+        </li>
+        </ul>
+
+</body>
+
+</html>

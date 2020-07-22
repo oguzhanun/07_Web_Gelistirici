@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Objeler</title>
+</head>
+<body>
+    
+    
+    
+    
+    
+    <script>
+    
+        var opel = {
+            marka : "Opel",
+            model : "Astra",
+            yil : 2015,
+            renk : "kırmızı",
+            otomatik : true
+        }
+        
+        var toyota = new Object();
+        toyota.marka = "Toyota";
+        toyota.model = "Yaris";
+        toyota.yil = 2017;
+        toyota.renk = "mavi";
+        toyota.otomatik = false;
+        
+        var arabalar = [toyota, opel];
+        
+        console.log(arabalar[0].marka);
+        
+        for (var i = 0; i<arabalar.length; i++){
+            
+            console.log(arabalar[i]);
+        }
+    
+    
+    </script>
+</body>
+</html>

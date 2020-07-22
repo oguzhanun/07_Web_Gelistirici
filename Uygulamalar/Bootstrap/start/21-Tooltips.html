@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <!-- Menu -->
+    <header>
+        <h2 class="display-4 text-center my-4">Tooltips</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="dropdown">
+                        <button class="btn btn-success btn-block dropdown-toggle" type="button" data-toggle="dropdown">
+                 			 Utilities
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="2-bootstrap-setup.html">Bootstrap Setup</a>
+                            <a class="dropdown-item" href="3-typography.html">Typography</a>
+                            <a class="dropdown-item" href="4-Text-Align-Display.html">Text Align & Display</a>
+                            <a class="dropdown-item" href="5-Float-Positions.html">Floats & Positions</a>
+                            <a class="dropdown-item" href="6-Colors.html">Colors</a>
+                            <a class="dropdown-item" href="7-Margin-Padding.html">Margin & Padding</a>
+                            <a class="dropdown-item" href="8-Border-Sizing.html">Border & Sizing</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="dropdown">
+                        <button class="btn btn-primary btn-block dropdown-toggle" type="button" data-toggle="dropdown">
+                           Components
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="9-Buttons-Button-Groups.html">Buttons & Button Groups</a>
+                            <a class="dropdown-item" href="10-Forms-Input-Groups.html">Forms & Input Groups</a>
+                            <a class="dropdown-item" href="11-Tables-Paginations.html">Tables & Paginations</a>
+                            <a class="dropdown-item" href="12-List-Groups-Badges.html">List Group & Badges</a>
+                            <a class="dropdown-item" href="13-Navbar-Navs.html">Navbar & Navs</a>
+                            <a class="dropdown-item" href="14-Alerts-Media-Objects.html">Alerts & Media Objects</a>
+                            <a class="dropdown-item" href="15-Cards.html">Cards</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="dropdown">
+                        <button class="btn btn-warning btn-block dropdown-toggle" type="button" data-toggle="dropdown">
+                            Layout
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="16-Breakpoints.html">Breakpoints</a>
+                            <a class="dropdown-item" href="17-Grid.html">Grids</a>
+                            <a class="dropdown-item" href="18-Flexbox.html">Flexbox Classes</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="dropdown">
+                        <button class="btn btn-danger btn-block dropdown-toggle" type="button" data-toggle="dropdown">
+                        	  Plugins
+                    	 </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="19-Sliders.html">Carousel Slider</a>
+                            <a class="dropdown-item" href="20-Collapse-Accordion.html">Collapse & Accordion</a>
+                            <a class="dropdown-item" href="21-Tooltips.html">Tooltips</a>
+                            <a class="dropdown-item" href="22-Popovers.html">Popovers</a>
+                            <a class="dropdown-item" href="23-Modals.html">Modals</a>
+                            <a class="dropdown-item" href="24-ScrollSpy.html">ScrollSpy</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+    </header>
+
+    <div class="container">
+
+
+        <!-- Tooltips -->
+        <a href="#" role="button" class="btn btn-primary" data-toggle="tooltip" id="toolToggle" data-html="true" title="<img src=http://subkarakoy.com/wp-content/gallery/photos/thumbs/thumbs_12_PhotoGallery_big_subkarakoy.jpg> ">Hover over me</a>
+
+        <br><br>
+    
+        <!-- Tooltip Positions -->
+
+        <button type="button" class="btn btn-success" data-toggle="tooltip" title="<h2>tooltipim benim</h2> <p>biricik sevgilim</p>" data-html="true" data-placement="top">
+  			Tooltip on top
+		</button>
+        <button type="button" class="btn btn-success" data-toggle="tooltip" title="<h2>tooltipim benim</h2> <p>biricik sevgilim</p>" data-html="true" data-placement="right">
+  			Tooltip on right
+		</button>
+        <button type="button" class="btn btn-success" data-toggle="tooltip" title="<h2>tooltipim benim</h2> <p>biricik sevgilim</p>" data-html="true" data-placement="bottom">
+ 			 Tooltip on bottom
+		</button>
+        <button type="button" class="btn btn-success" data-toggle="tooltip" title="<h2>tooltipim benim</h2> <p>biricik sevgilim</p>" data-html="true" data-placement="left">
+  			Tooltip on left
+		</button>
+
+        <br><br>
+
+        <!-- Tooltips with Html -->
+
+        <button type="button" class="btn btn-success" data-toggle="tooltip" title="<h2>tooltipim benim</h2> <p>biricik sevgilim</p>" data-html="true">
+  			Tooltip with HTML
+		</button>
+
+        <br>
+        <br>
+        <br>
+        <!-- Tooltips Javascript-->
+        <button type="button" class="btn btn-success" onClick="showTooltip()">
+  			Show
+		</button>
+
+        <button type="button" class="btn btn-success" onClick="hideTooltip()">
+  			Hide
+		</button>
+
+        <button type="button" class="btn btn-success" onClick="toggleTooltip()">
+  			Toggle
+		</button>
+
+        <!-- Tooltips Events-->
+        
+        
+        
+        
+
+    </div>
+
+    <div style="margin-top: 400px;"></div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <script>
+        $('[data-toggle="tooltip"]').tooltip();
+
+        function showTooltip() {
+
+            $('#toolToggle').tooltip('show');
+
+        }
+        
+        function hideTooltip() {
+
+            $('#toolToggle').tooltip('hide');
+
+        }
+        
+        function toggleTooltip() {
+
+            $('#toolToggle').tooltip('toggle');
+
+        }
+        
+        $('#toolToggle').on('show.bs.tooltip', function() {
+                            console.log('show');
+                            })
+        
+        
+        $('#toolToggle').on('hidden.bs.tooltip', function() {
+                            console.log('hidden');
+                            })
+        
+
+    </script>
+
+</body>
+
+</html>

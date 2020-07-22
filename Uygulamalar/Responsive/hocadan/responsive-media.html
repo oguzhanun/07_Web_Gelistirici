@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Image Gallery</title>
+    <style>
+        
+        .gallery-item{           
+            border: 1px solid #ccc;
+        }
+        
+        .gallery-item:hover{
+            border: 1px solid #777;
+        }
+        
+        .gallery-item img{
+            width: 100%;
+            height: auto;
+        }
+        
+        .description
+        {
+            text-align: center;
+            padding: 15px;
+        }
+        
+        *{
+            box-sizing: border-box;
+        }
+        
+        .responsive{
+            padding: 0 5px;
+            float: left;
+            width:25%;
+        }
+        
+        @media screen and (max-width:700px)
+        {
+            .responsive{              
+                width:50%;
+                margin-top: 10px;
+            }
+        }
+        
+        @media screen and (max-width:400px)
+        {
+            .responsive{              
+                width:100%;
+                margin-top: 10px;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <h1>Image Gallery</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo officia facere vero. Soluta labore, consequuntur quaerat cupiditate harum molestiae sed?</p>
+    
+    <div id="gallery">
+        
+        <div class="responsive">
+        
+            <div class="gallery-item">            
+                <a href="http://c1.staticflickr.com/5/4271/35018375682_25af223d3d_b.jpg" target="_blank">                
+                    <img src="http://c1.staticflickr.com/5/4271/35018375682_25af223d3d_b.jpg" alt="">
+                </a>  
+                <div class="description">
+                    description about image gallery item
+                </div>          
+            </div>
+        
+        </div>
+        
+          <div class="responsive">
+        
+            <div class="gallery-item">            
+                <a href="http://c1.staticflickr.com/5/4271/35018375682_25af223d3d_b.jpg" target="_blank">                
+                    <img src="http://c1.staticflickr.com/5/4271/35018375682_25af223d3d_b.jpg" alt="">
+                </a>  
+                <div class="description">
+                    description about image gallery item
+                </div>          
+            </div>
+        
+        </div>
+        
+          <div class="responsive">
+        
+            <div class="gallery-item">            
+                <a href="http://c1.staticflickr.com/5/4271/35018375682_25af223d3d_b.jpg" target="_blank">                
+                    <img src="http://c1.staticflickr.com/5/4271/35018375682_25af223d3d_b.jpg" alt="">
+                </a>  
+                <div class="description">
+                    description about image gallery item
+                </div>          
+            </div>
+        
+        </div>
+        
+          <div class="responsive">
+        
+            <div class="gallery-item">            
+                <a href="http://c1.staticflickr.com/5/4271/35018375682_25af223d3d_b.jpg" target="_blank">                
+                    <img src="http://c1.staticflickr.com/5/4271/35018375682_25af223d3d_b.jpg" alt="">
+                </a>  
+                <div class="description">
+                    description about image gallery item
+                </div>          
+            </div>
+        
+        </div>
+        
+        
+       
+        
+    </div>
+    
+    
+    
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Responsive Menu Uygulaması</title>
+    <meta name="viewport" content="width=device-width">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous">
+
+
+    </script>
+    <script>
+        $(document).ready(function() {
+
+            $("#icon").click(function() {
+                $("#navbar ul").toggleClass("open");
+            });
+
+        });
+
+    </script>
+    <style>
+        body,
+        ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul li {
+            float: left;
+            text-decoration: none;
+            padding: 15px 20px;
+            list-style: none;
+        }
+
+        ul li a {
+            text-decoration: none;
+        }
+
+        @media screen and (max-width:500px) {
+            body>a {
+                display: block;
+                background-image: url(menu.png);
+                background-repeat: no-repeat;
+                background-position: 98%;
+                background-color: black;
+                color: #404040;
+                cursor: pointer;
+                height: 40px;
+            }
+
+            #navbar ul {
+                visibility: hidden;
+                height: 0;
+            }
+            ul li {
+                float: none;
+                background: gray;
+                border-bottom: 1px solid black;
+            }
+
+            ul li a {
+                color: white;
+            }
+            
+            #navbar ul.open{
+                visibility: visible;
+                height: auto;
+            }
+        }
+
+    </style>
+
+</head>
+
+
+
+<body>
+    <a id="icon" href="#"></a>
+    <div id="navbar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Reference</a></li>
+
+        </ul>
+    </div>
+    <img style="width: 100%;" src="https://static.pexels.com/photos/635255/pexels-photo-635255.jpeg" alt="">
+
+
+
+
+
+
+
+
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+</html>

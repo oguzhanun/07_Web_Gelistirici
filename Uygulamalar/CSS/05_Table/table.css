@@ -1,0 +1,35 @@
+
+table {
+    width:60%;
+    margin:10px;
+    border: 1px solid gray;
+}
+
+table th{
+    text-align:left;
+    background: blue;
+    color:white;
+    padding: 5px;
+    border-collapse: collapse;
+}
+
+table td{
+    padding:5px;
+}
+
+table tr:hover{
+    background-color: #696969;
+}
+
+tr:nth-child(odd){
+    background: #dddddd;
+}
+
+th{
+    border: 1px solid gray;
+}
+
+.green_table{
+    background: green;
+    
+}

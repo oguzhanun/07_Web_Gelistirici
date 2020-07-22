@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bootstrap Sitesinin Kopyası</title>
+    <link rel="stylesheet" href="fontawesome.min.css">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            color: white;
+        }
+
+        #container {
+            width: 100%;
+            height: 80px;
+            background: #293D51;
+            position: fixed;
+        }
+
+        #sec_container {
+            width: 1200px;
+            height: 80px;
+            margin: 0 auto;
+            line-height: 80px;
+
+        }
+
+        #sec_container div {}
+
+        #logo {
+
+            float: left;
+            font-weight: 700;
+            font-size: 2em;
+        }
+
+        #menu {
+            float: right;
+        }
+
+        #menu li {
+            display: inline-block;
+            list-style: none;
+            margin: 12px;
+        }
+
+        #menu li a {
+            text-decoration: none;
+            color: white;
+            letter-spacing: 1px;
+        }
+
+        #menu li a:hover {
+            color: #00C49F;
+        }
+
+        #header {
+            background: #00C49F;
+        }
+
+        #header #imge {
+            width: 1200px;
+            padding: 0;
+            align-items: center;
+            float: none;
+            text-align: center;
+            margin: 0 auto;
+            padding-top: 100px;
+            padding-bottom: 50px;
+        }
+
+        #header #imge h1 {
+            font-size: 5em;
+            margin-bottom: 30px;
+            margin-top: 30px;
+        }
+
+        #profile {
+            position: static;
+            padding-top: 50px;
+        }
+
+        hr {
+            border: none;
+            border-top: 5px solid white;
+            width: 400px;
+
+        }
+
+        hr:after {
+            content: fas fa-star;
+            font-family: "FontAwesome";
+        }
+
+        #content {
+            width: 1200px;
+            background: white;
+            padding: 0;
+            margin: 100px auto;
+            text-align: center;
+        }
+
+        #content a {
+            width: 30%;
+            display: inline-block;
+            padding-left: 1%;
+            padding-bottom: 10px;
+        }
+
+        #content a div {
+            text-align: center;
+            padding: 0;
+            width: 100%;
+            display: inline-block;
+
+        }
+
+        a div img {
+            width: 100%;
+        }
+
+        .round {
+            border-radius: 5px;
+        }
+
+        .line-black {
+            border: none;
+            border-top: 5px solid black;
+            width: 400px;
+            margin-bottom: 50px;
+            margin-top: 30px;
+        }
+
+        div a .kapama {
+            background: #283D51;
+            color: black;
+            z-index: 2;
+            display: inline-block;
+            position: absolute;
+            max-width: 360px;
+            height: 264px;
+            opacity: 0;
+        }
+
+        div a .kapama:hover {
+            opacity: 0.8;
+            border-radius: 5px;
+        }
+
+        #about {
+            background: #00C49F;
+            text-align: center;
+            padding: 50px;
+        }
+
+        #about h2 {
+            font-size: 4em;
+            margin-bottom: 30px;
+        }
+
+        #about p {
+            -webkit-column-count: 2;
+            margin: 50px 180px;
+            font-size: 1.5em;
+            text-align: justify;
+        }
+
+        .button {
+            color: white;
+            font-size: 1.5em;
+            border: 2px solid white;
+            background: #00CCA3;
+            padding: 13px;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            color: #00CCA3;
+            background: white;
+        }
+
+        #contact {
+            color: #253C52;
+            text-align: center;
+            width: 1200px;
+            margin: 0 auto;
+            margin-top: 100px;
+        }
+
+        #contact h2 {
+            font-size: 4em;
+        }
+
+        hr.mavi {
+            border: none;
+            border-top: 5px solid #253C52;
+            width: 400px;
+        }
+
+        .form {
+            width: 100%;
+            text-align: center;
+        }
+
+        .form input {
+            display: inline-block;
+            width: 800px;
+            border: none;
+            border-bottom: 1px solid gray;
+            padding: 20px 10px;
+            font-size: 1.5em;
+            line-height: 25px;
+        }
+
+        textarea {
+            font-size: 1.5em;
+            width: 800px;
+            border: none;
+            border-bottom: 1px solid gray;
+            padding: 20px 10px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .send {
+            background: #009578;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            font-size: 1.5em;
+            line-height: 2em;
+            padding: 10px 25px;
+            float: left;
+            margin-left: 190px;
+            margin-bottom: 100px;
+            margin-top: 10px;
+        }
+
+        .send:hover {
+            background: #293D51;
+        }
+
+        #footers_footer {
+            font-size: 14px;
+            margin: 0;
+            padding: 0;
+            padding-top: 0;
+        }
+
+
+        #footer {
+            margin-top: 200px;
+            margin-bottom: 200px;
+            background: #293D51;
+            display: block;
+            text-align: center;
+        }
+
+        #footer>div {
+            display: block !important;
+            width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+            padding-top: 50px;
+            font-size: 1.5em;
+        }
+
+        .footer_ust div {
+            float: left;
+            width: 33%;
+            margin-bottom: 50px;
+        }
+
+        .yeter{
+            margin: 0;
+            padding: 0;
+            
+        }
+    </style>
+
+</head>
+
+
+
+<body>
+
+    <div id=container>
+        <div id="sec_container">
+
+            <div id="logo">
+                START BOOTSTRAP
+            </div>
+            <div>
+                <ul id="menu">
+                    <li><a href="">PORTFOLIO</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div id="header">
+        <div id="imge">
+
+            <img id="profile" src="profile.png" alt="profile fotoğrafı">
+
+            <h1>
+                START BOOTSTRAP
+
+            </h1>
+
+            <hr>
+
+            <h2>
+
+                Web Developer - Graphic Artist - User Experience Designer
+            </h2>
+        </div>
+    </div>
+
+    <div id="content">
+
+        <h2 style="color:#283D51; font-size:4em; margin:5px;">PORTFOLIO</h2>
+        <hr class="line-black">
+        <a href="">
+            <div class="kapama"></div>
+            <div> <img class="round" src="cabin.png" alt="">
+
+            </div>
+        </a>
+        <a href="">
+            <div>
+                <div class="kapama"></div>
+                <img class="round" src="cake.png" alt=""></div>
+        </a>
+        <a href="">
+            <div>
+                <div class="kapama"></div>
+                <img class="round" src="circus.png" alt=""></div>
+        </a>
+        <a href="">
+            <div>
+                <div class="kapama"></div>
+                <img class="round" src="game.png" alt=""></div>
+        </a>
+        <a href="">
+            <div>
+                <div class="kapama"></div>
+                <img class="round" src="safe.png" alt=""></div>
+        </a>
+        <a href="">
+            <div>
+                <div class="kapama"></div>
+                <img class="round" src="submarine.png" alt=""></div>
+        </a>
+    </div>
+
+    <div id="about">
+
+        <h2>ABOUT</h2>
+
+        <hr>
+
+        <p>Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization. <br> Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!
+        </p>
+
+        <button class="button">
+            <i class="fa fa-download mr-2"></i>
+            Download Now!
+        </button>
+
+    </div>
+
+    <div id="contact">
+
+        <h2>
+            CONTACT ME
+        </h2>
+        <hr class="mavi">
+        <div class="div-form">
+            <form class="form">
+
+                <div>
+                    <input type="text" placeholder="Name">
+                </div>
+
+                <div>
+                    <input type="text" placeholder="Email Address">
+                </div>
+
+                <div>
+                    <input type="text" placeholder="Phone Number">
+                </div>
+
+                <textarea name="message" placeholder="Message" id="textarea" cols="30" rows="10"></textarea>
+
+                <button class="send">Send</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="footer">
+        <div class="footer_ust">
+            <div>LOCATION</div>
+            <div>AROUND THE WEB</div>
+            <div>ABOUT FREELANCER</div>
+        </div>
+
+        <div class="footer_ust">
+            <div>
+                <p>
+                    2215 John Daniel Drive <br> Clark, MO 65243
+                </p>
+            </div>
+
+            <div class="footer_ust">
+                *****************************
+            </div>
+
+            <div class="footer_ust">
+                <p>
+                    Freelance is a free to use, open source Bootstrap theme created by Start Bootstrap.
+                </p>
+            </div>
+
+        </div>
+
+        <div id="footers_footer">
+            <div class="yeter">
+                Copyright © Your Website 2018
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

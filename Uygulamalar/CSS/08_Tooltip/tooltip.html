@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tooltip Uygulaması</title>
+    <link href="https://fonts.googleapis.com/css?family=Kavivanar" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <style>
+        
+        *{
+            font-family: 'Kavivanar', cursive;
+
+        }
+        .tooltip{
+            visibility: hidden;
+        }
+        
+        .text{
+            
+            position:relative;
+        }
+        .text:hover~.tooltip{
+            
+            visibility: visible;
+            position: absolute;
+            left: 20px;
+            top: 100px;
+            background: gray;
+            color:white;
+            border-radius: 5px;
+            width: 80px;
+            font-size:20;
+            padding: 10px;
+        }
+    
+    
+    </style>
+</head>
+<body>
+ 
+ <a href="#">
+  
+  <i class="fab fa-accessible-icon"></i>
+   </a>
+   
+   <br>
+   <hr>
+   
+   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, expedita voluptatem voluptas mollitia suscipit at facere! Obcaecati ducimus saepe rerum aliquam voluptatibus consectetur ipsam porro similique deleniti aperiam, nesciunt, maxime.</p>
+   
+   <div>Lorem <span class="text">ipsum</span> dolor sit amet, consectetur adipisicing elit. Itaque, saepe magni illum totam quaerat deleniti eaque consequuntur officiis dignissimos ullam ut, culpa repudiandae. Deleniti laboriosam, magni voluptate officiis! <span class="tooltip">impedit sunt</span> </div>
+    
+</body>
+</html>

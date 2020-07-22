@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Diziler</title>
+</head>
+<body>
+    
+    
+    
+    <script>
+    
+    
+        var marka = ["Toyota", "Opel", "Ford" ];
+        
+        marka.push("Hyundai");    //dizinin sonuna eleman ekler.
+        
+        console.log(marka);
+        
+        marka.unshift("Nissan");  //dizinin başına bir eleman ekleme yapar.
+        
+        console.log(marka);
+        
+        marka.pop();              //dizinin sonundaki elemanı dışarı çıkarır.
+        
+        console.log(marka);
+        
+        marka.shift();           //dizinin başındaki elemanı dışarı çıkarır.
+        
+        console.log(marka);
+        
+        if(marka.indexOf("Opel")!==-1)
+            {
+                console.log(marka[marka.indexOf("Opel")]);
+            }
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link href="https://fonts.googleapis.com/css?family=Kavivanar" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<style>
+
+    </style>
+</head>
+
+<body>
+
+	<!-- Menu -->
+	<header>
+		<h2 class="display-4 text-center my-4">Forms & Input Groups</h2>
+		<div class="container">
+				<div class="row">
+				<div class="col-md-3">
+					<div class="dropdown">
+						<button class="btn btn-success btn-block dropdown-toggle" type="button" data-toggle="dropdown">
+                 			 Utilities
+                        </button>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="2-bootstrap-setup.html">Bootstrap Setup</a>
+							<a class="dropdown-item" href="3-typography.html">Typography</a>
+							<a class="dropdown-item" href="4-Text-Align-Display.html">Text Align & Display</a>
+							<a class="dropdown-item" href="5-Float-Positions.html">Floats & Positions</a>
+							<a class="dropdown-item" href="6-Colors.html">Colors</a>
+							<a class="dropdown-item" href="7-Margin-Padding.html">Margin & Padding</a>
+							<a class="dropdown-item" href="8-Border-Sizing.html">Border & Sizing</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="dropdown">
+						<button class="btn btn-primary btn-block dropdown-toggle" type="button" data-toggle="dropdown">
+                           Components
+                        </button>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="9-Buttons-Button-Groups.html">Buttons & Button Groups</a>
+							<a class="dropdown-item" href="10-Forms-Input-Groups.html">Forms & Input Groups</a>
+							<a class="dropdown-item" href="11-Tables-Paginations.html">Tables & Paginations</a>
+							<a class="dropdown-item" href="12-List-Groups-Badges.html">List Group & Badges</a>
+							<a class="dropdown-item" href="13-Navbar-Navs.html">Navbar & Navs</a>
+							<a class="dropdown-item" href="14-Alerts-Media-Objects.html">Alerts & Media Objects</a>
+							<a class="dropdown-item" href="15-Cards.html">Cards</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="dropdown">
+						<button class="btn btn-warning btn-block dropdown-toggle" type="button" data-toggle="dropdown">
+                            Layout
+                        </button>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="16-Breakpoints.html">Breakpoints</a>
+							<a class="dropdown-item" href="17-Grid.html">Grids</a>
+							<a class="dropdown-item" href="18-Flexbox.html">Flexbox Classes</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="dropdown">
+						<button class="btn btn-danger btn-block dropdown-toggle" type="button" data-toggle="dropdown">
+                        	  Plugins
+                    	 </button>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="19-Sliders.html">Carousel Slider</a>
+							<a class="dropdown-item" href="20-Collapse-Accordion.html">Collapse & Accordion</a>
+							<a class="dropdown-item" href="21-Tooltips.html">Tooltips</a>
+							<a class="dropdown-item" href="22-Popovers.html">Popovers</a>
+							<a class="dropdown-item" href="23-Modals.html">Modals</a>
+							<a class="dropdown-item" href="24-ScrollSpy.html">ScrollSpy</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<hr>
+	</header>
+
+	<div class="container">
+
+		<!-- Form 1 -->
+		<form>
+
+			<div class="form-group">
+				<label for="name">Name</label>
+				<input type="text" class="form-control" id="name" placeholder="Enter name">
+			</div>
+
+			<div class="form-group">
+				<label for="email">Email</label>
+				<input type="email" class="form-control" id="email" placeholder="Enter email">
+				<small class="form-text text-muted">
+  					please enter a correct email
+				</small>
+			</div>
+
+			<div class="form-group">
+				<label for="password">Password</label>
+				<input type="text" id="password" class="form-control" placeholder="Enter password" readonly>
+			</div>
+
+			<div class="form-group">
+				<label for="gender">City</label>
+				<select class="form-control" id="gender">
+				  <option>Kocaeli</option>
+				  <option>İstanbul</option>				
+				</select>
+			</div>
+
+			<div class="form-group">
+				<label for="message">Message</label>
+				<textarea id="message" class="form-control" rows="3"></textarea>
+			</div>
+
+			<div class="form-group">
+				<legend>What are your hobies ? </legend>
+				<div class="form-check">
+					<label class="form-check-label" for="running">
+   				        <input  type="checkbox" id="running">
+    				    Running
+  				    </label>
+				</div>
+				<div class="form-check">
+					<label class="form-check-label">
+   				        <input type="checkbox">
+    				    Rowing
+  				    </label>
+				</div>
+				<div class="form-check">
+					<label class="form-check-label">
+   				        <input type="checkbox">
+    				    Playing Football
+  				    </label>
+				</div>
+			</div>
+
+			<div class="form-row">
+				<div class="col">
+				    <div class="form-group">
+				    <label for="firstname" class="label">Firstname</label>
+					<input id="firstname" class="form-control" type="text" placeholder="First name">
+				    </div>
+				</div>
+				<div class="col">
+				    <div class="form-group">
+				    <label for="surname" class="label">Surname</label>
+					<input id="surname" class="form-control" type="text" placeholder="Last name">
+				    </div>
+				</div>
+			</div>
+			
+			<hr>
+			
+			<div class="custom-control custom-checkbox">
+				<input class="custom-control-input"  type="checkbox" id="customCheck1">
+				<label for="customCheck1" class="custom-control-label">Check this</label>
+			</div>
+			
+			<hr>
+
+			<div class="custom-file">
+				<input class="custom-file-input" type="file" id="customFile">
+				<label class="custom-file-label" for="customFile">Choose file</label>
+			</div>
+			
+			<hr>
+
+			<div class="input-group">
+				<input type="text" placeholder="username" class="form-control" area-describedby="basic-addon2">
+				<div class="input-group-append">
+					<span class="input-group-text" id="basic-addon2">@example.com</span>
+				</div>
+			</div>
+
+			<label for="basic-url">Your URL</label>
+			<div class="input-group">
+				<div class="input-group-prepend">
+					<span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
+				</div>
+				<input class="form-control" area-describedby="basic-addon3" type="text" id="basic-url">
+			</div>
+
+		</form>
+
+		<div style="margin-top:300px;"></div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

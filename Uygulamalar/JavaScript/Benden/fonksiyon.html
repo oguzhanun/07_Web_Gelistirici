@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fonksiyonlar</title>
+</head>
+<body>
+    
+    
+    
+    
+    <script>
+    
+    
+        var sayi = prompt("Lütfen bir sayı giriniz.");
+        
+        function tekMiCiftMi(sayi){
+            
+            if(sayi%2 == 0){
+                
+                console.log(sayi + " sayısı çifttir.")
+            } else{
+                console.log(sayi + " sayısı tektir.")
+            }
+        };
+        
+        tekMiCiftMi(sayi);
+        
+        function faktoriyel(say){
+            
+            if(say === 0){
+                console.log("0 faktoriyel 1'e eşittir.")
+                
+            } else if (say>0){
+                
+                var sonuc = 1;
+                
+                while((say-1)>0){
+                
+                    sonuc = sonuc * say;
+                
+                    say = say - 1;
+                }
+                console.log(sayi + " faktoriyel " + sonuc + " sayısına eşittir." );
+                
+            } else if(say<0){
+                
+                console.log("Lütfen pozitif bir tam sayı giriniz");
+            }
+                
+        };
+        
+        faktoriyel(sayi);
+        
+        var arabalar = ["toyota","mazda","opel"];
+        
+        function diziGoster(ney){
+            
+            ney.forEach(function(item){
+                console.log(item);
+            });
+        };
+        
+        diziGoster(arabalar);
+    
+    
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,43 @@
+a{
+    display: block;
+    width:260px;
+    padding: 3px 10px;
+    margin: 5px;
+    border:1px solid red;
+    text-decoration: none;
+}
+
+a:link{
+    
+    color: magenta;
+}
+a:visited{
+    background-color: red;
+}
+a:hover{
+    background: blue;
+}
+
+a:unvisited{
+    background-color: aqua;
+    color:fuchsia;
+}
+
+a:active{
+    background: green;
+    color:white;
+}
+
+ul li:first-child{color: blue;
+background: yellow; display:inline-block; }
+
+li:nth-child(odd){
+    border:1px solid black;
+    display:inline;
+    list-style-type: circle;
+    
+}
+
+h1::before{
+    content:"fred.jpg"
+}

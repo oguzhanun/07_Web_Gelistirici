@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <!-- Menu -->
+    <header>
+        <h2 class="display-4 text-center my-4">Collapse & Accordion</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="dropdown">
+                        <button class="btn btn-success btn-block dropdown-toggle" type="button" data-toggle="dropdown">
+                 			 Utilities
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="2-bootstrap-setup.html">Bootstrap Setup</a>
+                            <a class="dropdown-item" href="3-typography.html">Typography</a>
+                            <a class="dropdown-item" href="4-Text-Align-Display.html">Text Align & Display</a>
+                            <a class="dropdown-item" href="5-Float-Positions.html">Floats & Positions</a>
+                            <a class="dropdown-item" href="6-Colors.html">Colors</a>
+                            <a class="dropdown-item" href="7-Margin-Padding.html">Margin & Padding</a>
+                            <a class="dropdown-item" href="8-Border-Sizing.html">Border & Sizing</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="dropdown">
+                        <button class="btn btn-primary btn-block dropdown-toggle" type="button" data-toggle="dropdown">
+                           Components
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="9-Buttons-Button-Groups.html">Buttons & Button Groups</a>
+                            <a class="dropdown-item" href="10-Forms-Input-Groups.html">Forms & Input Groups</a>
+                            <a class="dropdown-item" href="11-Tables-Paginations.html">Tables & Paginations</a>
+                            <a class="dropdown-item" href="12-List-Groups-Badges.html">List Group & Badges</a>
+                            <a class="dropdown-item" href="13-Navbar-Navs.html">Navbar & Navs</a>
+                            <a class="dropdown-item" href="14-Alerts-Media-Objects.html">Alerts & Media Objects</a>
+                            <a class="dropdown-item" href="15-Cards.html">Cards</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="dropdown">
+                        <button class="btn btn-warning btn-block dropdown-toggle" type="button" data-toggle="dropdown">
+                            Layout
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="16-Breakpoints.html">Breakpoints</a>
+                            <a class="dropdown-item" href="17-Grid.html">Grids</a>
+                            <a class="dropdown-item" href="18-Flexbox.html">Flexbox Classes</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="dropdown">
+                        <button class="btn btn-danger btn-block dropdown-toggle" type="button" data-toggle="dropdown">
+                        	  Plugins
+                    	 </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="19-Sliders.html">Carousel Slider</a>
+                            <a class="dropdown-item" href="20-Collapse-Accordion.html">Collapse & Accordion</a>
+                            <a class="dropdown-item" href="21-Tooltips.html">Tooltips</a>
+                            <a class="dropdown-item" href="22-Popovers.html">Popovers</a>
+                            <a class="dropdown-item" href="23-Modals.html">Modals</a>
+                            <a class="dropdown-item" href="24-ScrollSpy.html">ScrollSpy</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+    </header>
+
+    <div class="container">
+
+        <!-- Collapse -->
+        <p>
+            <a class="btn btn-primary " data-toggle="collapse" href="#collapseExample">
+    			Toggle Button
+  			</a>
+
+            <button class="btn btn-primary d-inline-block" data-target="#collapseExample" data-toggle="collapse">
+		
+		        Toggle Button
+		
+		    </button>
+        </p>
+
+
+        <div class="collapse" id="collapseExample">
+            <div class="card card-body">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate eveniet excepturi amet iure facere aliquam deserunt dignissimos quas, sed ut sunt eligendi repellat, illo in, sit numquam, labore quisquam. Corporis.
+            </div>
+        </div>
+
+        <br><br>
+
+        <!-- Accordion -->
+        <div id="accordion">
+            <div class="card">
+                <div class="card-header">
+                    <h5>
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne">
+          					Collapsible Group Item #1
+        				</button>
+                    </h5>
+                </div>
+
+                <div class="collapse show" id="collapseOne" data-parent="#accordion">
+                    <div class="card-body card-text" >
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, soluta, non laboriosam cupiditate amet laborum qui accusantium necessitatibus tempora voluptate veniam, dicta quidem ipsa rerum. Corporis perspiciatis obcaecati ullam tempora.
+                    </div>
+                </div>
+            </div>
+             <div class="card">
+                <div class="card-header">
+                    <h5>
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseTwo">
+          					Collapsible Group Item #2
+        				</button>
+                    </h5>
+                </div>
+
+                <div class="collapse " id="collapseTwo" data-parent="#accordion">
+                    <div class="card-body card-text" >
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, soluta, non laboriosam cupiditate amet laborum qui accusantium necessitatibus tempora voluptate veniam, dicta quidem ipsa rerum. Corporis perspiciatis obcaecati ullam tempora.
+                    </div>
+                </div>
+            </div>
+             <div class="card">
+                <div class="card-header">
+                    <h5>
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseThree">
+          					Collapsible Group Item #3
+        				</button>
+                    </h5>
+                </div>
+
+                <div class="collapse" id="collapseThree" data-parent="#accordion">
+                    <div class="card-body card-text" >
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, soluta, non laboriosam cupiditate amet laborum qui accusantium necessitatibus tempora voluptate veniam, dicta quidem ipsa rerum. Corporis perspiciatis obcaecati ullam tempora.
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

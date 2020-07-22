@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <!-- Menu -->
+    <header>
+        <h2 class="display-4 text-center my-4">Navbar & Navs</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="dropdown">
+                        <button class="btn btn-success btn-block dropdown-toggle" type="button" data-toggle="dropdown">
+                 			 Utilities
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="2-bootstrap-setup.html">Bootstrap Setup</a>
+                            <a class="dropdown-item" href="3-typography.html">Typography</a>
+                            <a class="dropdown-item" href="4-Text-Align-Display.html">Text Align & Display</a>
+                            <a class="dropdown-item" href="5-Float-Positions.html">Floats & Positions</a>
+                            <a class="dropdown-item" href="6-Colors.html">Colors</a>
+                            <a class="dropdown-item" href="7-Margin-Padding.html">Margin & Padding</a>
+                            <a class="dropdown-item" href="8-Border-Sizing.html">Border & Sizing</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="dropdown">
+                        <button class="btn btn-primary btn-block dropdown-toggle" type="button" data-toggle="dropdown">
+                           Components
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="9-Buttons-Button-Groups.html">Buttons & Button Groups</a>
+                            <a class="dropdown-item" href="10-Forms-Input-Groups.html">Forms & Input Groups</a>
+                            <a class="dropdown-item" href="11-Tables-Paginations.html">Tables & Paginations</a>
+                            <a class="dropdown-item" href="12-List-Groups-Badges.html">List Group & Badges</a>
+                            <a class="dropdown-item" href="13-Navbar-Navs.html">Navbar & Navs</a>
+                            <a class="dropdown-item" href="14-Alerts-Media-Objects.html">Alerts & Media Objects</a>
+                            <a class="dropdown-item" href="15-Cards.html">Cards</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="dropdown">
+                        <button class="btn btn-warning btn-block dropdown-toggle" type="button" data-toggle="dropdown">
+                            Layout
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="16-Breakpoints.html">Breakpoints</a>
+                            <a class="dropdown-item" href="17-Grid.html">Grids</a>
+                            <a class="dropdown-item" href="18-Flexbox.html">Flexbox Classes</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="dropdown">
+                        <button class="btn btn-danger btn-block dropdown-toggle" type="button" data-toggle="dropdown">
+                        	  Plugins
+                    	 </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="19-Sliders.html">Carousel Slider</a>
+                            <a class="dropdown-item" href="20-Collapse-Accordion.html">Collapse & Accordion</a>
+                            <a class="dropdown-item" href="21-Tooltips.html">Tooltips</a>
+                            <a class="dropdown-item" href="22-Popovers.html">Popovers</a>
+                            <a class="dropdown-item" href="23-Modals.html">Modals</a>
+                            <a class="dropdown-item" href="24-ScrollSpy.html">ScrollSpy</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+    </header>
+
+
+    <!-- Basic Navbar -->
+    <nav class="navbar navbar-expand-sm bg-warning d-inline-block">
+        <ul class="navbar-nav ">
+            <li class="nav-item pr-1">
+                <a class="nav-link" href="#">Link 1</a>
+            </li>
+            <li class="nav-item pr-3">
+                <a class="nav-link" href="#">Link 2</a>
+            </li>
+            <li class="nav-item pr-3">
+                <a class="nav-link" href="#">Link 3</a>
+            </li>
+        </ul>
+    </nav>
+
+    <br><br>
+
+
+    <!-- Vertical Navbar -->
+    <nav class="navbar ">
+        <ul class="navbar-nav">
+            <li class="navbar-item">
+                <a class="navbar-link" href="#">Link 1</a>
+            </li>
+            <li class="navbar-item">
+                <a class="navbar-link" href="#">Link 2</a>
+            </li>
+            <li class="navbar-item">
+                <a class="navbar-link" href="#">Link 3</a>
+            </li>
+        </ul>
+    </nav>
+
+    <br><br>
+
+
+    <!-- Colored Navbar -->
+
+    <nav class="navbar navbar-expand-md bg-danger navbar-dark">
+        <ul class="navbar-nav">
+            <li class="navbar-item ">
+                <a class="navbar-link pr-1 " href="#">Link 1</a>
+            </li>
+            <li class="navbar-item ">
+                <a class="navbar-link pr-1 " href="#">Link 2</a>
+            </li>
+            <li class="navbar-item ">
+                <a class="navbar-link pr-1 " href="#">Link 3</a>
+            </li>
+        </ul>
+    </nav>
+
+
+    <br><br>
+
+    <!-- Brand / Logo -->
+    <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+        <a href="#" class="navbar-brand">LOGO</a>
+        <ul class="navbar-nav">
+            <li class="navbar-item">
+                <a class="navbar-link" href="#">Link 1</a>
+            </li>
+            <li class="navbar-item">
+                <a href="#" class="navbar-link">Link 2</a>
+            </li>
+            <li class="navbar-item">
+                <a href="#" class="navbar-link">Link 3</a>
+            </li>
+        </ul>
+    </nav>
+
+    <br><br>
+
+
+    <!-- Collapsible Navbar -->
+
+    <nav class="navbar navbar-expand-xl bg-light navbar-light">
+        <a href="#" class="navbar-brand">LOGO</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapseNavbar"><span class="navbar-toggler-icon"></span></button>
+
+        <div id="collapseNavbar" class="collapse navbar-collapse">
+            <ul class="navbar-nav" style="align-items:flex-end;">
+                <li class="navbar-item pr-3">
+                    <a class="navbar-link" href="#">Link 1</a>
+                </li>
+                <li class="navbar-item pr-3">
+                    <a href="#" class="navbar-link">Link 2</a>
+                </li>
+                <li class="navbar-item pr-3">
+                    <a href="#" class="navbar-link">Link 3</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <br><br>
+
+    <!-- Navbar with Dropdown -->
+    <nav class="navbar navbar-expand-xl bg-success navbar-light mb-3">
+        <a href="#" class="navbar-brand">LOGO</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapseNavbar2"><span class="navbar-toggler-icon"></span></button>
+
+        <div id="collapseNavbar2" class="collapse navbar-collapse">
+            <ul class="navbar-nav" style="align-items: flex-end; padding-right: 10px;">
+                <li class="navbar-item pr-3">
+                    <a class="navbar-link" href="#">Link 1</a>
+                </li>
+                <li class="navbar-item pr-3 dropdown">
+                    <a href="#" class="navbar-link dropdown-toggle" data-toggle="dropdown">Link 2</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">1</a>
+                        <a class="dropdown-item" href="#">2</a>
+                        <a class="dropdown-item" href="#">3</a>
+                    </div>
+                </li>
+                <li class="navbar-item pr-3">
+                    <a href="#" class="navbar-link">Link 3</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Fixed-Top Navbar -->
+
+    <nav class="navbar navbar-expand-xl bg-success navbar-light mb-3 fixed-top">
+        <a href="#" class="navbar-brand">LOGO</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapseNavbar2"><span class="navbar-toggler-icon"></span></button>
+
+        <div id="collapseNavbar2" class="collapse navbar-collapse">
+            <ul class="navbar-nav" style="align-items: flex-end; padding-right: 10px;">
+                <li class="navbar-item pr-3">
+                    <a class="navbar-link" href="#">Link 1</a>
+                </li>
+                <li class="navbar-item pr-3 dropdown">
+                    <a href="#" class="navbar-link dropdown-toggle" data-toggle="dropdown">Link 2</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">1</a>
+                        <a class="dropdown-item" href="#">2</a>
+                        <a class="dropdown-item" href="#">3</a>
+                    </div>
+                </li>
+                <li class="navbar-item pr-3">
+                    <a href="#" class="navbar-link">Link 3</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!-- Fixed-Bottom Navbar -->
+    <nav class="navbar navbar-expand-xl bg-success navbar-light mb-3 fixed-bottom">
+        <a href="#" class="navbar-brand">LOGO</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapseNavbar2"><span class="navbar-toggler-icon"></span></button>
+
+        <div id="collapseNavbar2" class="collapse navbar-collapse">
+            <ul class="navbar-nav" style="align-items: flex-end; padding-right: 10px;">
+                <li class="navbar-item pr-3">
+                    <a class="navbar-link" href="#">Link 1</a>
+                </li>
+                <li class="navbar-item pr-3 dropdown">
+                    <a href="#" class="navbar-link dropdown-toggle" data-toggle="dropdown">Link 2</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">1</a>
+                        <a class="dropdown-item" href="#">2</a>
+                        <a class="dropdown-item" href="#">3</a>
+                    </div>
+                </li>
+                <li class="navbar-item pr-3">
+                    <a href="#" class="navbar-link">Link 3</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Sticky-Top Navbar -->
+
+    <nav class="navbar navbar-expand-xl bg-danger navbar-light mb-3 stickey-top">
+        <a href="#" class="navbar-brand">LOGO</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapseNavbar2"><span class="navbar-toggler-icon"></span></button>
+
+        <div id="collapseNavbar2" class="collapse navbar-collapse">
+            <ul class="navbar-nav" style="align-items: flex-end; padding-right: 10px;">
+                <li class="navbar-item pr-3">
+                    <a class="navbar-link" href="#">Link 1</a>
+                </li>
+                <li class="navbar-item pr-3 dropdown">
+                    <a href="#" class="navbar-link dropdown-toggle" data-toggle="dropdown">Link 2</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">1</a>
+                        <a class="dropdown-item" href="#">2</a>
+                        <a class="dropdown-item" href="#">3</a>
+                    </div>
+                </li>
+                <li class="navbar-item pr-3">
+                    <a href="#" class="navbar-link">Link 3</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!-- Nav Menu -->
+    <ul>
+        <li>
+            <a href="#">Link 1</a>
+        </li>
+        <li>
+            <a href="#">Link 2</a>
+        </li>
+        <li>
+            <a href="#">Link 3</a>
+        </li>
+        <li>
+            <a href="#" class="nav-link disabled">Link 4</a>
+        </li>
+    </ul>
+
+    <!-- Aligned Navs -->
+
+
+    <!-- Vertical Navs -->
+
+
+    <ul class="nav flex-column">
+        <li class="nav-item">
+            <a class="nav-link" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#menu1">Menu 1</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#menu2">Menu 2</a>
+        </li>
+    </ul>
+
+    <!-- Nav tabs -->
+    <div class="container">
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#menu1">Menu 1</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#menu2">Menu 2</a>
+            </li>
+        </ul>
+
+        <!-- Tab panes -->
+
+        <div class="tab-content">
+            <div class="tab-pane active container" id="home">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci ad ea ratione quaerat corporis omnis, iste neque ab fuga maiores. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, distinctio sapiente cumque deleniti molestias eveniet neque facilis sit dignissimos nisi, sint reiciendis quos est eaque beatae atque reprehenderit, tempora minus.
+            </div>
+            <div class="tab-pane container" id="menu1">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci ad ea ratione quaerat corporis omnis, iste neque ab fuga maiores. Lorem ipsum dolor sit amet, consectetur adipisicing.
+            </div>
+            <div class="tab-pane container" id="menu2">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci ad ea ratione quaerat corporis omnis, iste neque ab fuga maiores.
+            </div>
+        </div>
+    </div>
+
+
+    <div style="margin-top:300px;"></div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

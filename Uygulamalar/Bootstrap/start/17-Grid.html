@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title> Document</title>
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body>
+
+	<!-- Menu -->
+	<header>
+		<h2 class="display-4 text-center my-4">Grids</h2>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3">
+					<div class="dropdown">
+						<button class="btn btn-success btn-block dropdown-toggle" type="button" data-toggle="dropdown">
+                 			 Utilities
+                        </button>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="2-bootstrap-setup.html">Bootstrap Setup</a>
+							<a class="dropdown-item" href="3-typography.html">Typography</a>
+							<a class="dropdown-item" href="4-Text-Align-Display.html">Text Align & Display</a>
+							<a class="dropdown-item" href="5-Float-Positions.html">Floats & Positions</a>
+							<a class="dropdown-item" href="6-Colors.html">Colors</a>
+							<a class="dropdown-item" href="7-Margin-Padding.html">Margin & Padding</a>
+							<a class="dropdown-item" href="8-Border-Sizing.html">Border & Sizing</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="dropdown">
+						<button class="btn btn-primary btn-block dropdown-toggle" type="button" data-toggle="dropdown">
+                           Components
+                        </button>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="9-Buttons-Button-Groups.html">Buttons & Button Groups</a>
+							<a class="dropdown-item" href="10-Forms-Input-Groups.html">Forms & Input Groups</a>
+							<a class="dropdown-item" href="11-Tables-Paginations.html">Tables & Paginations</a>
+							<a class="dropdown-item" href="12-List-Groups-Badges.html">List Group & Badges</a>
+							<a class="dropdown-item" href="13-Navbar-Navs.html">Navbar & Navs</a>
+							<a class="dropdown-item" href="14-Alerts-Media-Objects.html">Alerts & Media Objects</a>
+							<a class="dropdown-item" href="15-Cards.html">Cards</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="dropdown">
+						<button class="btn btn-warning btn-block dropdown-toggle" type="button" data-toggle="dropdown">
+                            Layout
+                        </button>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="16-Breakpoints.html">Breakpoints</a>
+							<a class="dropdown-item" href="17-Grid.html">Grids</a>
+							<a class="dropdown-item" href="18-Flexbox.html">Flexbox Classes</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="dropdown">
+						<button class="btn btn-danger btn-block dropdown-toggle" type="button" data-toggle="dropdown">
+                        	  Plugins
+                    	 </button>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="19-Sliders.html">Carousel Slider</a>
+							<a class="dropdown-item" href="20-Collapse-Accordion.html">Collapse & Accordion</a>
+							<a class="dropdown-item" href="21-Tooltips.html">Tooltips</a>
+							<a class="dropdown-item" href="22-Popovers.html">Popovers</a>
+							<a class="dropdown-item" href="23-Modals.html">Modals</a>
+							<a class="dropdown-item" href="24-ScrollSpy.html">ScrollSpy</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<hr>
+	</header>
+
+	<div class="container">
+
+
+		<!-- Responsive Grid -->
+		<div class="row">
+			<div class="border col-md-3">
+				column
+			</div>
+			<div class="border col-md-9">
+				column
+			</div>
+		</div>
+
+		<br><br>
+
+
+		<!-- Equal Width -->
+		<div class="row">
+			<div class="border col">
+				column
+			</div>
+			<div class="border col">
+				column
+			</div>
+		</div>
+
+		<br><br>
+
+
+		<!-- Column Breaks -->
+		<div>
+			<div class="border">
+				column
+			</div>
+			<div class="border">
+				column
+			</div>
+		</div>
+
+
+		<br><br>
+
+
+		<!-- Ordering -->
+
+		<div class="row">
+			<div class="border col order-2">
+				column 1
+			</div>
+			<div class="border col order-1">
+				column 2
+			</div>
+		</div>
+
+		<br><br>
+
+		<!-- Nesned Columns -->
+		<div>
+			<div class="border">
+				column
+			</div>
+			<div class="border">
+				column
+			</div>
+		</div>
+
+		<br><br>		
+
+
+		<!-- Offsetting Column -->
+		
+		<div class="row">
+			<div class="border col-3 mr-auto">
+				column 1
+			</div>
+			<div class="border col-3">
+				column 2
+			</div>
+		</div>
+		<br><br>
+
+		<!-- Alignment -->
+
+		<div class="row border bg-primary" style="height: 150px;">
+			<div class="col border align-self-start bg-warning">
+				One of three columns
+			</div>
+			<div class="col border align-self-center bg-warning">
+				One of three columns
+			</div>
+			<div class="col border align-self-end bg-warning">
+				One of three columns
+			</div>
+		</div>
+		
+		<br><br>
+		
+		<div class="row border bg-primary align-items-center" style="height: 150px;">
+			<div class="col border bg-warning">
+				One of three columns
+			</div>
+			<div class="col border bg-warning">
+				One of three columns
+			</div>
+			<div class="col border bg-warning">
+				One of three columns
+			</div>
+		</div>
+		
+		<br><br>
+		
+		<div class="row border bg-primary align-items-end" style="height: 150px;">
+			<div class="col border bg-warning">
+				One of three columns
+			</div>
+			<div class="col border bg-warning">
+				One of three columns
+			</div>
+			<div class="col border bg-warning">
+				One of three columns
+			</div>
+		</div>
+
+
+
+		<br><br>
+
+
+		<div class="row border bg-primary align-items-start" style="height: 150px;">
+			<div class="col border bg-warning">
+				One of three columns
+			</div>
+			<div class="col border bg-warning">
+				One of three columns
+			</div>
+			<div class="col border bg-warning">
+				One of three columns
+			</div>
+		</div>
+
+		<br><br>
+
+
+
+	</div>
+	
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

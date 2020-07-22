@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<!-- saved from url=(0130)file:///Users/mustafaoguzhanun/Desktop/Komple%20Web%20Gelis%CC%A7tirici%20Eg%CC%86itimi/Uygulamalar/Bootstrap/start/15-Cards.html# -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="./Document_files/bootstrap.min.css">
+</head>
+
+<body>
+
+    <!-- Menu -->
+    <header>
+        <h2 class="display-4 text-center my-4">Cards</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="dropdown">
+                        <button class="btn btn-success btn-block dropdown-toggle" type="button" data-toggle="dropdown">
+                 			 Utilities
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="file:///Users/mustafaoguzhanun/Desktop/Komple%20Web%20Gelis%CC%A7tirici%20Eg%CC%86itimi/Uygulamalar/Bootstrap/start/2-bootstrap-setup.html">Bootstrap Setup</a>
+                            <a class="dropdown-item" href="file:///Users/mustafaoguzhanun/Desktop/Komple%20Web%20Gelis%CC%A7tirici%20Eg%CC%86itimi/Uygulamalar/Bootstrap/start/3-typography.html">Typography</a>
+                            <a class="dropdown-item" href="file:///Users/mustafaoguzhanun/Desktop/Komple%20Web%20Gelis%CC%A7tirici%20Eg%CC%86itimi/Uygulamalar/Bootstrap/start/4-Text-Align-Display.html">Text Align &amp; Display</a>
+                            <a class="dropdown-item" href="file:///Users/mustafaoguzhanun/Desktop/Komple%20Web%20Gelis%CC%A7tirici%20Eg%CC%86itimi/Uygulamalar/Bootstrap/start/5-Float-Positions.html">Floats &amp; Positions</a>
+                            <a class="dropdown-item" href="file:///Users/mustafaoguzhanun/Desktop/Komple%20Web%20Gelis%CC%A7tirici%20Eg%CC%86itimi/Uygulamalar/Bootstrap/start/6-Colors.html">Colors</a>
+                            <a class="dropdown-item" href="file:///Users/mustafaoguzhanun/Desktop/Komple%20Web%20Gelis%CC%A7tirici%20Eg%CC%86itimi/Uygulamalar/Bootstrap/start/7-Margin-Padding.html">Margin &amp; Padding</a>
+                            <a class="dropdown-item" href="file:///Users/mustafaoguzhanun/Desktop/Komple%20Web%20Gelis%CC%A7tirici%20Eg%CC%86itimi/Uygulamalar/Bootstrap/start/8-Border-Sizing.html">Border &amp; Sizing</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="dropdown">
+                        <button class="btn btn-primary btn-block dropdown-toggle" type="button" data-toggle="dropdown">
+                           Components
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="file:///Users/mustafaoguzhanun/Desktop/Komple%20Web%20Gelis%CC%A7tirici%20Eg%CC%86itimi/Uygulamalar/Bootstrap/start/9-Buttons-Button-Groups.html">Buttons &amp; Button Groups</a>
+                            <a class="dropdown-item" href="file:///Users/mustafaoguzhanun/Desktop/Komple%20Web%20Gelis%CC%A7tirici%20Eg%CC%86itimi/Uygulamalar/Bootstrap/start/10-Forms-Input-Groups.html">Forms &amp; Input Groups</a>
+                            <a class="dropdown-item" href="file:///Users/mustafaoguzhanun/Desktop/Komple%20Web%20Gelis%CC%A7tirici%20Eg%CC%86itimi/Uygulamalar/Bootstrap/start/11-Tables-Paginations.html">Tables &amp; Paginations</a>
+                            <a class="dropdown-item" href="file:///Users/mustafaoguzhanun/Desktop/Komple%20Web%20Gelis%CC%A7tirici%20Eg%CC%86itimi/Uygulamalar/Bootstrap/start/12-List-Groups-Badges.html">List Group &amp; Badges</a>
+                            <a class="dropdown-item" href="file:///Users/mustafaoguzhanun/Desktop/Komple%20Web%20Gelis%CC%A7tirici%20Eg%CC%86itimi/Uygulamalar/Bootstrap/start/13-Navbar-Navs.html">Navbar &amp; Navs</a>
+                            <a class="dropdown-item" href="file:///Users/mustafaoguzhanun/Desktop/Komple%20Web%20Gelis%CC%A7tirici%20Eg%CC%86itimi/Uygulamalar/Bootstrap/start/14-Alerts-Media-Objects.html">Alerts &amp; Media Objects</a>
+                            <a class="dropdown-item" href="file:///Users/mustafaoguzhanun/Desktop/Komple%20Web%20Gelis%CC%A7tirici%20Eg%CC%86itimi/Uygulamalar/Bootstrap/start/15-Cards.html">Cards</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="dropdown">
+                        <button class="btn btn-warning btn-block dropdown-toggle" type="button" data-toggle="dropdown">
+                            Layout
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="file:///Users/mustafaoguzhanun/Desktop/Komple%20Web%20Gelis%CC%A7tirici%20Eg%CC%86itimi/Uygulamalar/Bootstrap/start/16-Breakpoints.html">Breakpoints</a>
+                            <a class="dropdown-item" href="file:///Users/mustafaoguzhanun/Desktop/Komple%20Web%20Gelis%CC%A7tirici%20Eg%CC%86itimi/Uygulamalar/Bootstrap/start/17-Grid.html">Grids</a>
+                            <a class="dropdown-item" href="file:///Users/mustafaoguzhanun/Desktop/Komple%20Web%20Gelis%CC%A7tirici%20Eg%CC%86itimi/Uygulamalar/Bootstrap/start/18-Flexbox.html">Flexbox Classes</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="dropdown">
+                        <button class="btn btn-danger btn-block dropdown-toggle" type="button" data-toggle="dropdown">
+                        	  Plugins
+                    	 </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="file:///Users/mustafaoguzhanun/Desktop/Komple%20Web%20Gelis%CC%A7tirici%20Eg%CC%86itimi/Uygulamalar/Bootstrap/start/19-Sliders.html">Carousel Slider</a>
+                            <a class="dropdown-item" href="file:///Users/mustafaoguzhanun/Desktop/Komple%20Web%20Gelis%CC%A7tirici%20Eg%CC%86itimi/Uygulamalar/Bootstrap/start/20-Collapse-Accordion.html">Collapse &amp; Accordion</a>
+                            <a class="dropdown-item" href="file:///Users/mustafaoguzhanun/Desktop/Komple%20Web%20Gelis%CC%A7tirici%20Eg%CC%86itimi/Uygulamalar/Bootstrap/start/21-Tooltips.html">Tooltips</a>
+                            <a class="dropdown-item" href="file:///Users/mustafaoguzhanun/Desktop/Komple%20Web%20Gelis%CC%A7tirici%20Eg%CC%86itimi/Uygulamalar/Bootstrap/start/22-Popovers.html">Popovers</a>
+                            <a class="dropdown-item" href="file:///Users/mustafaoguzhanun/Desktop/Komple%20Web%20Gelis%CC%A7tirici%20Eg%CC%86itimi/Uygulamalar/Bootstrap/start/23-Modals.html">Modals</a>
+                            <a class="dropdown-item" href="file:///Users/mustafaoguzhanun/Desktop/Komple%20Web%20Gelis%CC%A7tirici%20Eg%CC%86itimi/Uygulamalar/Bootstrap/start/24-ScrollSpy.html">ScrollSpy</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+    </header>
+
+    <div class="container">
+
+        <!-- Card Body -->
+        <div class="card">
+            <div class="card-body">
+                This is some text within a card body.
+            </div>
+        </div>
+
+        <br><br>
+
+        <!-- Card Body with Content -->
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a role="button" class="btn btn-success" href="file:///Users/mustafaoguzhanun/Desktop/Komple%20Web%20Gelis%CC%A7tirici%20Eg%CC%86itimi/Uygulamalar/Bootstrap/start/15-Cards.html#">Go somewhere</a>
+            </div>
+        </div>
+
+        <br><br>
+
+        <!-- Card Body with Image -->
+        <div class="card" style="align-items:center; padding-top:20px; ">
+            <img class="card-img-top" style="width:50%;" src="./Document_files/saved_resource" alt="Card image cap">
+            <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+        </div>
+
+        <br><br>
+
+        <!-- List Groups -->
+
+        <div class="card">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">Cras justo odio</li>
+                <li class="list-group-item">Dapibus ac facilisis in</li>
+                <li class="list-group-item">Vestibulum at eros</li>
+            </ul>
+        </div>
+
+        <br><br>
+
+        <!-- List Groups with Header -->
+
+        <div class="card">
+            <div class="card-header">
+                Featured
+            </div>
+            <ul class="list-group">
+                <li class="list-group-item">Cras justo odio</li>
+                <li class="list-group-item">Dapibus ac facilisis in</li>
+                <li class="list-group-item">Vestibulum at eros</li>
+            </ul>
+        </div>
+
+        <br><br>
+
+        <!-- Header ve Footer -->
+
+        <div class="card">
+            <div class="card-header">
+                Featured
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Special title treatment</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a class="btn btn-primary btn-sm" href="file:///Users/mustafaoguzhanun/Desktop/Komple%20Web%20Gelis%CC%A7tirici%20Eg%CC%86itimi/Uygulamalar/Bootstrap/start/15-Cards.html#">Go somewhere</a>
+            </div>
+            <div class="card-footer">
+                2 days ago
+            </div>
+        </div>
+
+        <br><br>
+
+        <!-- Alignment -->
+
+        <div class="card text-center">
+            <div class="card-header">
+                Featured
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Special title treatment</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a class="btn btn-primary btn-sm" href="file:///Users/mustafaoguzhanun/Desktop/Komple%20Web%20Gelis%CC%A7tirici%20Eg%CC%86itimi/Uygulamalar/Bootstrap/start/15-Cards.html#">Go somewhere</a>
+            </div>
+            <div class="card-footer">
+                2 days ago
+            </div>
+        </div>
+
+        <br><br>
+
+        <!-- Grid-->
+
+        <div class="row">
+
+            <div class="col">
+
+                <div class="card" style="align-items:center; padding-top:20px; ">
+                    <img class="card-img-top" style="width:50%;" src="./Document_files/saved_resource" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+
+                <div class="card" style="align-items:center; padding-top:20px; ">
+                    <img class="card-img-top" style="width:50%;" src="./Document_files/saved_resource" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+
+                <div class="card" style="align-items:center; padding-top:20px; ">
+                    <img class="card-img-top" style="width:50%;" src="./Document_files/saved_resource" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Sizing-->
+
+        <div>
+
+            <div class="card text-right w-75 ">
+                <img class="card-img-top" style="width:50%;" src="./Document_files/saved_resource" alt="Card image cap">
+                <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </div>
+        </div>
+
+       <div class="card text-right w-50 m-3">
+            <div class="card-header">
+                Featured
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Special title treatment</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a class="btn btn-primary btn-sm" href="file:///Users/mustafaoguzhanun/Desktop/Komple%20Web%20Gelis%CC%A7tirici%20Eg%CC%86itimi/Uygulamalar/Bootstrap/start/15-Cards.html#">Go somewhere</a>
+            </div>
+            <div class="card-footer">
+                2 days ago
+            </div>
+        </div>
+        <!-- Navigation-->
+
+        <div class="card text-center w-75">
+            <div class="card-header">
+                <ul class="nav nav-tabs card-header-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="file:///Users/mustafaoguzhanun/Desktop/Komple%20Web%20Gelis%CC%A7tirici%20Eg%CC%86itimi/Uygulamalar/Bootstrap/start/15-Cards.html#">Active</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="file:///Users/mustafaoguzhanun/Desktop/Komple%20Web%20Gelis%CC%A7tirici%20Eg%CC%86itimi/Uygulamalar/Bootstrap/start/15-Cards.html#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="file:///Users/mustafaoguzhanun/Desktop/Komple%20Web%20Gelis%CC%A7tirici%20Eg%CC%86itimi/Uygulamalar/Bootstrap/start/15-Cards.html#">Disabled</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Special title treatment</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a class="btn btn-primary btn-sm" href="file:///Users/mustafaoguzhanun/Desktop/Komple%20Web%20Gelis%CC%A7tirici%20Eg%CC%86itimi/Uygulamalar/Bootstrap/start/15-Cards.html#">Go somewhere</a>
+            </div>
+        </div>
+
+
+        <br><br>
+        <!-- Image Caps-->
+        
+        <div class="card w-50 ">
+                
+                <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+                <img class="card-img-bottom" src="./Document_files/saved_resource" alt="Card image cap">
+            </div>
+
+        <br><br>
+        
+        <!-- Image Overlays-->
+        
+        <div class="card bg-dark text-white">
+            <img src="./Document_files/saved_resource" alt="Card image">
+            <div class="card-img-overlay">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium a repellat neque molestiae, delectus ipsum ipsam veniam itaque quia non corporis ipsa distinctio illo perferendis error ratione aliquid quo quam?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quaerat fugit ipsum delectus explicabo, deleniti ut aspernatur velit assumenda? Repudiandae beatae optio sit, praesentium dolorum perferendis quod sed, dolore laboriosam.</p>
+                <p class="card-footer">Last updated 3 mins ago</p>
+            </div>
+        </div>
+
+        <br><br>
+
+        <!-- Card Styles-->
+
+        <div class="card bg-primary text-white">
+            <div class="card-header">Header</div>
+            <div>
+                <h5 class="card-title">Primary card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+        </div>
+        <br><br>
+        <div class="card bg-success w-50 text-white">
+            <div class="card-header">Header</div>
+            <div>
+                <h5 class="card-title">Success card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+        </div>
+        <br><br>
+        <div>
+            <div>Header</div>
+            <div>
+                <h5>Success card title</h5>
+                <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+        </div>
+        <div>
+            <div>Header</div>
+            <div>
+                <h5>Danger card title</h5>
+                <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+        </div>
+        <div>
+            <div>Header</div>
+            <div>
+                <h5>Warning card title</h5>
+                <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+        </div>
+        <div>
+            <div>Header</div>
+            <div>
+                <h5>Info card title</h5>
+                <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+        </div>
+        <div>
+            <div>Header</div>
+            <div>
+                <h5>Light card title</h5>
+                <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+        </div>
+        <div>
+            <div>Header</div>
+            <div>
+                <h5>Dark card title</h5>
+                <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+        </div>
+
+        <br><br>
+
+        <!-- Card Borders-->
+
+        <div class="card border-primary bg-dark text-white">
+            <div class="card-header">Header</div>
+            <div>
+                <h5 class="card-title">Primary card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+        </div>
+        <br><br>
+
+        <div class="card border-secondary">
+            <div class="card-header">Header</div>
+            <div>
+                <h5 class="card-title">Secondary card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+        </div>
+        <br><br>
+
+        <div>
+            <div>Header</div>
+            <div>
+                <h5>Success card title</h5>
+                <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+        </div>
+
+
+        <div>
+            <div>Header</div>
+            <div>
+                <h5>Danger card title</h5>
+                <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+        </div>
+
+        <div>
+            <div>Header</div>
+            <div>
+                <h5>Warning card title</h5>
+                <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+        </div>
+
+        <div>
+            <div>Header</div>
+            <div>
+                <h5>Info card title</h5>
+                <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+        </div>
+
+        <div>
+            <div>Header</div>
+            <div>
+                <h5>Light card title</h5>
+                <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+        </div>
+
+        <div>
+            <div>Header</div>
+            <div>
+                <h5>Dark card title</h5>
+                <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+        </div>
+
+
+        <br><br>
+
+        <!-- Card Groups-->
+
+        <div class="card-group">
+            <div class="card">
+                <img class="card-img-top" src="./Document_files/saved_resource" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="card-footer"><small>Last updated 3 mins ago</small></p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="./Document_files/saved_resource" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="card-footer"><small>Last updated 3 mins ago</small></p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="./Document_files/saved_resource" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="card-footer"><small>Last updated 3 mins ago</small></p>
+                </div>
+            </div>
+        </div>
+
+
+        <br><br>
+
+        <!-- Card Groups with Footer-->
+        
+        <div class="card-group">
+            <div class="card">
+                <img class="card-img-top" src="./Document_files/saved_resource" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="card-footer"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="./Document_files/saved_resource" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="card-footer"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="./Document_files/saved_resource" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="card-footer"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+            </div>
+        </div>
+
+        <br><br>
+
+        <!-- Card Deck-->
+
+       <div class="card-deck">
+            <div class="card">
+                <img class="card-img-top" src="./Document_files/saved_resource" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="card-footer"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="./Document_files/saved_resource" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="card-footer"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="./Document_files/saved_resource" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="card-footer"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+            </div>
+        </div>
+
+
+        <br><br>
+
+        <!-- Card Columns-->
+        <div class="card-columns">
+            <div class="card">
+                
+                <div class="card-body">
+                    <h5 class="card-title">Card title that wraps to a new line</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+            </div>
+            <div class="card p-3">
+                <blockquote class="blockquote mb-0 card-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                    <footer class="blockquote-footer">
+                        <small class="text-muted">
+          					Someone famous in <cite title="Source Title">Source Title</cite>
+        				</small>
+                    </footer>
+                </blockquote>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="file:///Users/mustafaoguzhanun/Desktop/Komple%20Web%20Gelis%CC%A7tirici%20Eg%CC%86itimi/Uygulamalar/Bootstrap/start/..." alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+            </div>
+            <div class="card bg-primary text-white text-center p-3">
+                <blockquote class="blockquote mb-0">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat.</p>
+                    <footer class="blockquote-footer">
+                        <small>
+          					Someone famous in <cite title="Source Title">Source Title</cite>
+        				</small>
+                    </footer>
+                </blockquote>
+            </div>
+            <div class="card text-center">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.
+                    </p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small>/p&gt;
+                </p></div>
+            </div>
+            <div class="card">
+                <img class="card-img" src="file:///Users/mustafaoguzhanun/Desktop/Komple%20Web%20Gelis%CC%A7tirici%20Eg%CC%86itimi/Uygulamalar/Bootstrap/start/..." alt="Card image">
+            </div>
+            <div class="card p-3 text-right">
+                <blockquote class="blockquote mb-0">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                    <footer class="blockquote-footer">
+                        <small class="text-muted">
+          					Someone famous in <cite title="Source Title">Source Title</cite>
+        				</small>
+                    </footer>
+                </blockquote>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+            </div>
+        </div>
+
+
+        <div style="margin-top:300px;"></div>
+    </div>
+
+    <script src="./Document_files/jquery-3.2.1.slim.min.js"></script>
+    <script src="./Document_files/popper.min.js"></script>
+    <script src="./Document_files/bootstrap.min.js"></script>
+
+
+
+
+</body></html>
